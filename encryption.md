@@ -29,7 +29,11 @@ See also: RFC 2045, RFC 4288
 
 ## Content
 
-The original content consists of valid JSON data.
+The original content consists of JSON-like data. The smart devices don't
+send valid JSON, the only difference to valid JSON is that the smart
+devices serialize strings with single quotes (`'`) instead of double
+quotes (`"`). In the following parts of this API documentation we still
+call it JSON.
 
 ## Padding
 
