@@ -7,9 +7,9 @@ device will be associated with the corresponding user.
 
 ## Request
 
-  - URL: **http://api.koubachi.com/v1/smart\_devices/:mac\_address**
+  - URL: **http://api.koubachi.com/v1/smart_devices/:mac_address**
   - Alternative
-    URL: **http://api.koubachi.com/smart\_devices/:mac\_address**
+    URL: **http://api.koubachi.com/smart_devices/:mac_address**
   - HTTP Method: **PUT**
   - Request Format: JSON ([encrypted](encryption.md))
 
@@ -38,13 +38,13 @@ Return Value:
 
 If update is ok, this call returns HTTP status code 200.
 
-If the user\_credentials are given, but the user is not valid, this call
+If user credentials are given, but the user is not valid, this call
 returns HTTP status code 404. In this case this method will return the
-following error description: `'\[\["login","is invalid"\]\]'`.
+following error description: `[["login","is invalid"]]`.
 
 If the MAC address can not be found, this call returns HTTP status code
 404. In this case this method will return the following error
-description: `'\[\["MAC","is invalid"\]\]'`.
+description: `[["MAC","is invalid"]]`.
 
   - **IMPORTANT**: Since there is no known symmetric key in this case,
     the answer is not encrypted/authenticated.
@@ -53,7 +53,7 @@ description: `'\[\["MAC","is invalid"\]\]'`.
 
 ### Request
 
-  - **PUT** `http://api.koubachi.com/smart\_devices/aa11bb22cc33`
+  - **PUT** `http://api.koubachi.com/smart_devices/aa11bb22cc33`
   - **Accept:** `application/x-www-form-urlencoded`
   - **Content-Type:** `application/x-koubachi-aes-encrypted`
   - **Body (after decryption):**
@@ -63,4 +63,4 @@ description: `'\[\["MAC","is invalid"\]\]'`.
 
   - `HTTP/1.1 200 OK`
   - **Body (after decryption):**
-    `current\_time=123456789\&last\_config\_change=123456789`
+    `current_time=123456789&last_config_change=123456789`

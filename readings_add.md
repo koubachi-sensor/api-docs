@@ -4,9 +4,9 @@ Store a series of sensor readings for the given smart device.
 
 ## Request
 
-  - URL: **http://api.koubachi.com/v1/smart\_devices/:mac\_address/readings**
+  - URL: **http://api.koubachi.com/v1/smart_devices/:mac_address/readings**
   - Alternative
-    URL: **http://api.koubachi.com/smart\_devices/:mac\_address/readings**
+    URL: **http://api.koubachi.com/smart_devices/:mac_address/readings**
   - HTTP Method: **POST**
   - Request Format: JSON ([encrypted](encryption.md))
 
@@ -22,7 +22,7 @@ Store a series of sensor readings for the given smart device.
   - **timestamp**: Timestamp (UNIX time), indicating when the message
     was sent.
   - **readings**: Sensor readings as nested array, with inner array in
-    the format `\[timestamp (UNIX time), sensor\_type\_id, raw\_value\]`
+    the format `[timestamp (UNIX time), sensor_type_id, raw_value]`
 
 **Optional: -**
 
@@ -51,14 +51,14 @@ Always:
 ### Request
 
   - **PUT**
-    `http://api.koubachi.com/smart\_devices/0123cafebabe/readings`
+    `http://api.koubachi.com/smart_devices/0123cafebabe/readings`
   - **Accept:** `application/x-www-form-urlencoded`
   - **Content-Type:** `application/x-koubachi-aes-encrypted`
   - **Body (after decryption):**
-    `{'timestamp': 123456789, 'readings': \[\[123123123, 1, 7\], \[123123124, 1, 7\], \[123123125, 1, 8\]\]}`
+    `{'timestamp': 123456789, 'readings': [[123123123, 1, 7], [123123124, 1, 7], [123123125, 1, 8]]}`
 
 ### Response
 
   - `HTTP/1.1 201 Created`
   - **Body (after decryption):**
-    `current\_time=123456789\&last\_config\_change=123456780`
+    `current_time=123456789&last_config_change=123456780`

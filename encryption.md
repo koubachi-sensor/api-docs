@@ -3,7 +3,7 @@
 The body of all HTTP requests from nodes to the server and the body of
 the server response are encrypted and authenticated by using AES + CRC.
 
-**NOTE:** For calls requiring CRC type of authentication, you must
+**NOTE:** For calls requiring CRC type of authentication, you must
 **always include the MAC address in the URL** (e.g.
 api.koubachi.com/smart\_devices/aabbccddeeff) and a timestamp (UNIX
 time), indicating, when the message was sent, in the body.
@@ -74,7 +74,7 @@ CRC.
 
 ## Example
 
-`\[16 byte random data\]{'timestamp':1234567890,'foo':'bar'}\[Zero-padding to make message size a multiple of 16 bytes\]\[4-byte CRC\]`
+`[16 byte random data]{'timestamp':1234567890,'foo':'bar'}[Zero-padding to make message size a multiple of 16 bytes][4-byte CRC]`
 
 # Encryption and Authentication of the Server
 
@@ -103,7 +103,7 @@ decrypted bytes.
 ```
 HTTP 200 OK
 Content-Type: application/x-koubachi-aes-encrypted
-\[More unencrypted headers\]
+[More unencrypted headers]
 
-\[16 byte random IV (not encrypted)\]\[4 byte UNIX time stamp\]\[8 byte zero padding\]\[4 byte CRC\]
+[16 byte random IV (not encrypted)][4 byte UNIX time stamp][8 byte zero padding][4 byte CRC]
 ```
