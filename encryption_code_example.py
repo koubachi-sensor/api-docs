@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import os
 import struct
 from zlib import crc32
