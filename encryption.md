@@ -105,9 +105,12 @@ decrypted bytes.
 ## Example
 
 ```
-HTTP 200 OK
+HTTP/1.1 200 OK
 Content-Type: application/x-koubachi-aes-encrypted
 [More unencrypted headers]
 
 [16 byte random IV (not encrypted)][4 byte UNIX time stamp][8 byte zero padding][4 byte CRC]
 ```
+
+**Note:** The HTTP version sent by the server must always be `HTTP/1.1`,
+the sensor can't handle anything else.
