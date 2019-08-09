@@ -1,4 +1,4 @@
-# smart\_device/config/show
+# smart\_devices/config/show
 
 Get a description of the current smart device configuration.
 

@@ -1,4 +1,4 @@
-# smart\_device/update
+# smart\_devices/update
 
 Update smart device attributes.
 
