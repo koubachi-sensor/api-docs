@@ -4,9 +4,9 @@ Get a description of the current smart device configuration.
 
 ## Request
 
-  - URL: **http://api.koubachi.com/v1/smart_devices/:mac_address/config**
+  - Path: **/v1/smart_devices/:mac_address/config**
   - Alternative
-    URL: **http://api.koubachi.com/smart_devices/:mac_address/config**
+    Path: **/smart_devices/:mac_address/config**
   - HTTP Method: **POST**
   - Request Format: JSON ([encrypted](encryption.md))
 
@@ -56,7 +56,7 @@ If it has changed:
 
 ### Request
 
-  - **POST** `http://api.koubachi.com/smart_devices/0102ababab/config`
+  - **POST** `http://api.example.com/smart_devices/0102ababab/config`
   - **Accept:** `application/x-www-form-urlencoded`
   - **Content-Type:** `application/x-koubachi-aes-encrypted`
   - **Body (after decryption):**

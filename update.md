@@ -7,9 +7,9 @@ device will be associated with the corresponding user.
 
 ## Request
 
-  - URL: **http://api.koubachi.com/v1/smart_devices/:mac_address**
+  - Path: **/v1/smart_devices/:mac_address**
   - Alternative
-    URL: **http://api.koubachi.com/smart_devices/:mac_address**
+    Path: **/smart_devices/:mac_address**
   - HTTP Method: **PUT**
   - Request Format: JSON ([encrypted](encryption.md))
 
@@ -53,7 +53,7 @@ description: `[["MAC","is invalid"]]`.
 
 ### Request
 
-  - **PUT** `http://api.koubachi.com/smart_devices/aa11bb22cc33`
+  - **PUT** `http://api.example.com/smart_devices/aa11bb22cc33`
   - **Accept:** `application/x-www-form-urlencoded`
   - **Content-Type:** `application/x-koubachi-aes-encrypted`
   - **Body (after decryption):**

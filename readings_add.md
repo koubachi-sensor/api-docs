@@ -4,9 +4,9 @@ Store a series of sensor readings for the given smart device.
 
 ## Request
 
-  - URL: **http://api.koubachi.com/v1/smart_devices/:mac_address/readings**
+  - Path: **/v1/smart_devices/:mac_address/readings**
   - Alternative
-    URL: **http://api.koubachi.com/smart_devices/:mac_address/readings**
+    Path: **/smart_devices/:mac_address/readings**
   - HTTP Method: **POST**
   - Request Format: JSON ([encrypted](encryption.md))
 
@@ -51,7 +51,7 @@ Always:
 ### Request
 
   - **PUT**
-    `http://api.koubachi.com/smart_devices/0123cafebabe/readings`
+    `http://api.example.com/smart_devices/0123cafebabe/readings`
   - **Accept:** `application/x-www-form-urlencoded`
   - **Content-Type:** `application/x-koubachi-aes-encrypted`
   - **Body (after decryption):**

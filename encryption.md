@@ -5,7 +5,7 @@ the server response are encrypted and authenticated by using AES + CRC.
 
 **NOTE:** For calls requiring CRC type of authentication, you must
 **always include the MAC address in the URL** (e.g.
-api.koubachi.com/smart\_devices/aabbccddeeff) and a timestamp (UNIX
+api.example.com/smart\_devices/aabbccddeeff) and a timestamp (UNIX
 time), indicating, when the message was sent, in the body.
 
 ## Key distribution
