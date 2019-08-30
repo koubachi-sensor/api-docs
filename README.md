@@ -31,8 +31,10 @@ This setting is lost after a factory reset.
 
 ## Get the Sensor's Symmetric Key
 
-TODO
+You can retrieve your sensor's encryption key together with all
+calibration parameters at the
+[Koubachi Labs web site](https://labs.koubachi.com/).
 
-## Convert Readings from Raw Values to SI Units
+# Third-Party Server Implementations
 
-TODO
+* [Implementation in Python 3](https://github.com/koalatux/koubachi-pyserver)
