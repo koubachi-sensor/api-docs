@@ -31,9 +31,9 @@ This setting is lost after a factory reset.
 
 ## Get the Sensor's Symmetric Key
 
-You can retrieve your sensor's encryption key together with all
-calibration parameters at the
-[Koubachi Labs web site](https://labs.koubachi.com/).
+Write an e-mail to [sensors@koubachi.com](mailto:sensors@koubachi.com) and
+mention the MAC addresses of your sensors. Within a few days we will reply with
+the symmetric keys and calibration data.
 
 # Third-Party Server Implementations
 
