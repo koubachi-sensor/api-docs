@@ -18,12 +18,16 @@ A server must implement three endpoints:
 
 ## Change the Sensor's Server Address
 
-Press the sensor's button for at least 3 seconds, until the LED turns
-and stays orange. Connect to the sensor's config Wi-Fi and open the
-configuration page in your browser <http://172.29.0.1/> to see if the
-connection works. Then change the URL in your browser's address bar to
-`http://172.29.0.1/sos_config?host=api.example.com&port=8005` with your
-desired host and port. The host can be a hostname or an IPv4 address.
+1. Press the sensor's button for at least 3 seconds, until the LED turns and
+   stays orange.
+1. Connect to the sensor's config Wi-Fi and open the configuration page in your
+   browser <http://172.29.0.1/> to see if the connection works.
+1. Then change the URL in your browser's address bar to
+   `http://172.29.0.1/sos_config?host=api.example.com&port=8005` with your
+   desired host and port. The host can be a hostname or an IPv4 address.
+1. Goto <http://172.29.0.1/> and enter the WIFI credentials and any user
+   credentials (these are not used, but required for the connection to be
+   setup) and click 'connect'.
 
 To get your current configuration visit <http://172.29.0.1/sos_config>.
 
