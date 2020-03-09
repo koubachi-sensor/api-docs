@@ -26,8 +26,8 @@ A server must implement three endpoints:
    `http://172.29.0.1/sos_config?host=api.example.com&port=8005` with your
    desired host and port. The host can be a hostname or an IPv4 address.
 1. Goto <http://172.29.0.1/> and enter the WIFI credentials and any user
-   credentials (these are not used, but required for the connection to be
-   setup) and click 'connect'.
+   credentials (just enter anything that looks valid, these are not used, but
+   required for the connection to be setup) and click 'connect'.
 
 To get your current configuration visit <http://172.29.0.1/sos_config>.
 
